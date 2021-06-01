@@ -1,14 +1,37 @@
 {
-  "name": "default",
+  "name": "wfxx-page",
   "version": "0.1.0",
   "private": true,
+  "author": "wfxx",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+
   },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": "bin/wfxx-page.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "lib/index.js",
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
